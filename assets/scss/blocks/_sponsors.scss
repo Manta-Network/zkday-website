@@ -1,0 +1,140 @@
+.sponsors-section {
+  padding: 0 0 80px;
+  background: linear-gradient(180deg, #050505 35.42%, #5853CA 100%);
+
+  @media (max-width: $screen-lg) {
+    padding: 0 0 40px;
+  };
+
+  &.sponsors-previous-section {
+    padding: 80px 0;
+
+    @media (max-width: $screen-lg) {
+      padding: 40px 0;
+    };
+  }
+
+  .headline-wrap {
+    text-align: center;
+    margin-bottom: 40px;
+
+    @media (max-width: $screen-lg) {
+      margin-bottom: 24px;
+    };
+
+    h3 {
+      font: 600 40px/1.2 $roboto-font;
+      color: $white-color;
+
+      @media (max-width: $screen-lg) {
+        font-size: 32px;
+      };
+    }
+  }
+
+  .item {
+    padding: 48px 24px;
+    border-radius: 40px;
+    background-color: #000;
+    display: inline-flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin-bottom: 30px;
+    height: calc(100% - 30px);
+    text-align: center;
+    position: relative;
+
+    @media (max-width: $screen-xl) {
+      padding: 32px 24px;
+    };
+
+    @media (max-width: $screen-lg) {
+      padding: 24px;
+      margin-bottom: 24px;
+      height: calc(100% - 24px);
+    };
+
+    @media (max-width: $screen-sm) {
+      margin-bottom: 12px;
+      height: auto;
+    };
+
+    &:hover::after {
+      opacity: 1;
+    }
+
+    &::after {
+      content: '';
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      border-radius: 40px;
+      border: 4px solid $white-color;
+      transition: $fast-transition;
+    }
+
+    &.bg-1 {
+      background: linear-gradient(278deg, #3330B1 5.65%, #D740F0 116.26%);
+    }
+
+    &.bg-2 {
+      background: linear-gradient(301.52deg, #54299B 1.95%, #63B9FF 116.18%);
+    }
+
+    &.bg-3 {
+      background: linear-gradient(54.47deg, #8225AD -26.91%, #2948B7 85.66%);
+    }
+
+    &.bg-4 {
+      background: linear-gradient(301.52deg, #5A17C8 1.95%, #1F79C1 116.18%);
+    }
+
+    .img-wrap {
+      height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 200px;
+      margin: 0 auto 24px;
+
+      @media (max-width: $screen-xl) {
+        margin-bottom: 16px;
+      };
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+
+    .text-wrap {
+
+      h4 {
+        font: 700 24px/1.1 $roboto-font;
+        color: $white-color;
+        margin-bottom: 24px;
+
+        @media (max-width: $screen-xl) {
+          margin-bottom: 16px;
+        };
+      }
+
+      p {
+        font: 400 15px/1.2 $figtree-font;
+        color: #DCDCDC;
+        padding: 0 24px;
+
+        @media (max-width: $screen-xl) {
+          padding: 0;
+        };
+      }
+
+      .btn-main {
+        margin-top: 15px;
+      }
+    }
+  }
+}

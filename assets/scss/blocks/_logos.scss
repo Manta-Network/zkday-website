@@ -1,0 +1,41 @@
+.logos-section {
+  background-color: #101A56;
+
+  .swiper {
+    cursor: pointer;
+  }
+
+  .sponsors-swiper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 25px 0;
+
+    .swiper-wrapper {
+      align-items: center;
+      -webkit-transition-timing-function: linear !important;
+      -o-transition-timing-function: linear !important;
+      transition-timing-function: linear !important;
+    }
+
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      p {
+        font: 500 16px/1.2 $roboto-font;
+        color: $white-color;
+        text-align: left;
+      }
+
+      img {
+        max-width: 80%;
+        max-height: 42px;
+      }
+    }
+  }
+}

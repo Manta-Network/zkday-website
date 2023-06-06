@@ -1,0 +1,71 @@
+.btn-main {
+  font: 700 20px/1 $roboto-font;
+  color: $white-color;
+  padding: 5px 30px;
+  min-height: 56px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  @media (max-width: $screen-lg) {
+    font-size: 16px;
+    padding: 5px 25px;
+  }
+
+  &.btn-gradient {
+    color: $white-color;
+    background: linear-gradient(90.06deg, #B31CC0 -8.82%, rgba(117, 68, 220, 0.994531) 59.53%, rgba(26, 101, 242, 0.99) 123.73%);
+
+    &:hover {
+      color: $white-color;
+    }
+  }
+
+  &.btn-white {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(90.06deg, #B31CC0 -8.82%, rgba(117, 68, 220, 0.994531) 59.53%, rgba(28, 37, 255, 0.99) 123.73%);
+
+    .bg {
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      z-index: 0;
+      width: calc(100% - 4px);
+      height: calc(100% - 4px);
+      border-radius: 4px;
+      background-color: $white-color;
+    }
+
+    .text {
+      position: relative;
+      z-index: 1;
+      background: linear-gradient(90.06deg, #DD3CEB -8.82%, rgba(99, 42, 222, 0.994531) 56.76%, #2F429C 123.73%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+
+  &.btn-disabled {
+    pointer-events: none;
+    opacity: .8;
+  }
+
+  .add {
+    font: 500 14px/1.3 $roboto-font;
+    display: block;
+    width: 100%;
+  }
+}

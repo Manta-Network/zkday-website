@@ -1,0 +1,74 @@
+// Google Fonts import
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+@font-face {
+  font-family: 'Baou';
+  src: url('../fonts/Baou-Display.ttf') format('truetype'),
+  url('../fonts/Baou-Display.otf') format('opentype'),
+  url('../fonts/Baou-Display.woff') format('woff'),
+  url('../fonts/Baou-Display.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Fonts
+$roboto-font: 'Roboto', sans-serif;
+$baou-font: 'Baou', sans-serif;
+$figtree-font: 'Figtree', sans-serif;
+
+//h1 {
+//  font: 600 64px/1.2 $roboto-font;
+//
+//
+//  @media (max-width: $screen-xl) {
+//    font-size: 44px;
+//  }
+//
+//  @media (max-width: $screen-lg) {
+//    font-size: 32px;
+//  }
+//}
+//
+//h2 {
+//  font: 600 64px/1.2 $roboto-font;
+//
+//  @media (max-width: $screen-xl) {
+//    font-size: 44px;
+//  }
+//
+//  @media (max-width: $screen-lg) {
+//    font-size: 32px;
+//  }
+//}
+//
+//h3 {
+//  font: 600 48px/1.2 $roboto-font;
+//
+//  @media (max-width: $screen-xl) {
+//    font-size: 32px;
+//  }
+//
+//  @media (max-width: $screen-lg) {
+//    font-size: 22px;
+//  }
+//}
+//
+//h4 {
+//  font: 700 32px/1.2 $roboto-font;
+//
+//  @media (max-width: $screen-xl) {
+//    font-size: 22px;
+//  }
+//
+//  @media (max-width: $screen-lg) {
+//    font-size: 20px;
+//  }
+//}
+//
+//p {
+//  font: 500 14px/1.2 $roboto-font;
+//}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}

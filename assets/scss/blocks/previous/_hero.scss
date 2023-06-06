@@ -1,0 +1,223 @@
+.hero-previous-section {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0 0;
+  position: relative;
+  height: 100vh;
+  min-height: 540px;
+  max-height: 1500px;
+  background: linear-gradient(264.85deg, #405DE6 -2.53%, #000000 102.54%), #FFFFFF;
+
+  @media (max-width: $screen-lg) {
+    height: auto;
+    max-height: max-content;
+    padding: 70px 0 0;
+  };
+
+  .container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media (max-width: $screen-sm) {
+      padding-top: 48px;
+      padding-bottom: 48px;
+    };
+  }
+
+  .headline-wrap {
+    margin-bottom: 50px;
+    text-align: center;
+
+    @media (max-width: $screen-lg) {
+      margin-bottom: 30px;
+    };
+
+    h1 {
+      font: 400 48px/1.1 $baou-font;
+      display: inline-flex;
+      align-items: center;
+
+      @media (max-width: $screen-lg) {
+        font-size: 36px;
+      };
+
+      @media (max-width: $screen-md) {
+        font-size: 18px;
+      };
+
+      .logo {
+        margin-right: 15px;
+        display: inline-block;
+        max-height: max-content;
+
+        @media (max-width: $screen-lg) {
+          margin-right: 10px;
+        };
+
+        @media (max-width: $screen-md) {
+          margin-right: 5px;
+        };
+
+        img {
+          width: 65px;
+
+          @media (max-width: $screen-lg) {
+            width: 48px;
+            height: 48px;
+          };
+
+          @media (max-width: $screen-md) {
+            width: 36px;
+            height: 36px;
+          };
+        }
+      }
+
+      .text {
+        color: $white-color;
+
+        @media (max-width: $screen-lg) {
+          text-align: left;
+        };
+
+        span {
+          background: linear-gradient(82.85deg, #6DD3DB 2.85%, #59DAEC 38.34%, #2C67FF 77.64%), #FFFFFF;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
+        }
+      }
+    }
+  }
+
+  .text-wrap {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+    @media (max-width: $screen-xl) {
+      padding-left: 0;
+    };
+
+    @media (max-width: $screen-lg) {
+      max-width: 500px;
+      margin: 0 auto;
+    };
+
+    h5 {
+      font: 700 20px/1.2 $roboto-font;
+      margin-bottom: 20px;
+      color: $white-color;
+      text-transform: uppercase;
+
+      @media (max-width: $screen-lg) {
+        font-size: 18px;
+      };
+    }
+
+    p {
+      font: 400 18px/1.4 $roboto-font;
+      color: #F2F2F2;
+      max-width: 500px;
+
+      @media (max-width: $screen-lg) {
+        font-size: 16px;
+      };
+    }
+  }
+
+  .video-wrap {
+
+    @media (max-width: $screen-lg) {
+      text-align: center;
+      margin-bottom: 20px;
+    };
+
+    iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+
+      @media (max-width: $screen-lg) {
+        max-width: 500px;
+        margin: 0 auto;
+      };
+    }
+  }
+
+  .container-fluid {
+    padding: 0;
+    background: linear-gradient(85.21deg, #F67110 -2.96%, #B40DD6 56.27%, #5F76F6 108.44%);
+  }
+
+  .numbers-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: calc(100% / 6);
+      padding: 42px 24px;
+      color: $white-color;
+
+      @media (max-width: $screen-xl) {
+        width: calc(100% / 3);
+      };
+
+      @media (max-width: $screen-lg) {
+        padding: 32px 16px;
+        border-width: 2px !important;
+      };
+
+      &:not(:last-child) {
+        border-right: 3px solid $white-color;
+      }
+
+      &:nth-child(-n+3) {
+        @media (max-width: $screen-xl) {
+          border-bottom: 3px solid $white-color;
+        };
+      }
+
+      &:nth-child(3n) {
+        @media (max-width: $screen-xl) {
+          border-right: 0;
+        };
+      }
+
+      h5 {
+        font: 400 27px/1.2 $baou-font;
+
+        @media (max-width: $screen-lg) {
+          font-size: 22px;
+        };
+
+        @media (max-width: $screen-sm) {
+          font-size: 20px;
+        };
+      }
+
+      p {
+        font: 400 16px/1 $baou-font;
+
+        @media (max-width: $screen-lg) {
+          font-size: 14px;
+        };
+
+        @media (max-width: $screen-sm) {
+          font-size: 12px;
+        };
+      }
+    }
+  }
+}
