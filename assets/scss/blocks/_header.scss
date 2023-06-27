@@ -87,10 +87,15 @@ header {
             position: relative;
             margin: 6px 0;
             max-width: max-content;
+            background-color: transparent;
           }
 
           .dropdown-item {
             color: $white-color;
+
+            @media (max-width: $screen-lg) {
+              padding: 4px 8px;
+            }
 
             &:hover {
               background-color: rgba(117, 68, 220, 0.994531);
@@ -132,12 +137,7 @@ header {
 
       @media (max-width: $screen-lg) {
         margin-left: 0;
-      }
-
-      &:not(:last-child) .nav-link {
-        @media (max-width: $screen-lg) {
-          margin-bottom: 20px;
-        }
+        margin-bottom: 20px;
       }
 
       .nav-link {
