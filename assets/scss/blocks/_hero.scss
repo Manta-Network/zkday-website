@@ -174,4 +174,48 @@
       }
     }
   }
+
+  .presented-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    @media (max-width: $screen-md) {
+      bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    p {
+      font: 400 18px/1.4 "Figtree", sans-serif;
+      color: $white-color;
+
+      @media (max-width: $screen-md) {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 16px;
+        font-size: 14px;
+      }
+    }
+
+    a {
+      margin-left: 24px;
+
+      @media (max-width: $screen-md) {
+        margin: 0 10px;
+      }
+    }
+
+    img {
+      height: 40px;
+
+      @media (max-width: $screen-md) {
+        height: 30px;
+      }
+    }
+  }
 }
