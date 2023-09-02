@@ -1,18 +1,17 @@
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
-  background: linear-gradient(269.78deg, #405DE6 6.63%, #050505 106.3%);
 
   @media (max-width: $screen-lg) {
     position: fixed;
   }
 
   .navbar {
-    padding: 24px 0;
-    background-color: rgba($dark-color, .6);
+    padding: 24px;
+    background-color: rgba($dark-color, .3);
     backdrop-filter: blur(5px);
 
     @media (max-width: $screen-lg) {

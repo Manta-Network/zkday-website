@@ -1,0 +1,141 @@
+.agenda-section {
+  padding: 80px 0 40px;
+  position: relative;
+  background-color: #060606;
+
+  @media (max-width: $screen-lg) {
+    padding: 40px 0 20px;
+  };
+
+  .headline-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 48px;
+
+    @media (max-width: $screen-lg) {
+      margin-bottom: 36px;
+    }
+
+    .img-wrap {
+      margin-bottom: 36px;
+      text-align: center;
+
+      img {
+        max-width: 100%;
+
+        @media (max-width: $screen-lg) {
+          max-width: 80%;
+        }
+      }
+    }
+
+    .items-wrap {
+      display: flex;
+      align-items: center;
+      gap: 56px;
+
+      @media (max-width: $screen-lg) {
+        gap: 32px;
+        flex-direction: column;
+      }
+
+      .item {
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: 12px;
+
+          @media (max-width: $screen-lg) {
+            max-width: 40px;
+          }
+        }
+
+        p {
+          font: 300 24px/1.4 $roboto-font;
+          color: $white-color;
+
+          @media (max-width: $screen-lg) {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .card-wrap {
+    padding: 48px 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 60px;
+    background: linear-gradient(180deg, rgba(129, 85, 255, 0.53) 0%, rgba(#00FFFF, .1) 100%);
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: $screen-lg) {
+      padding: 36px 24px;
+    }
+
+    .column-wrap {
+      width: 50%;
+
+      @media (max-width: $screen-lg) {
+        width: 100%;
+      }
+
+      &:nth-of-type(1) {
+        padding-right: 30px;
+        border-right: 2px solid rgba(#CDCDCD, .5);
+
+        @media (max-width: $screen-lg) {
+          padding-right: 0;
+          border-right: 0;
+        }
+      }
+
+      &:nth-of-type(2) {
+        padding-left: 30px;
+
+        @media (max-width: $screen-lg) {
+          padding-left: 0;
+        }
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          padding: 20px 0;
+          border-bottom: 2px solid #A6D9FF;
+
+          p {
+            font: 300 20px/1.2 $figtree-font;
+
+            &.time {
+              color: #00FFD1;
+            }
+
+            &.text {
+              color: $white-color;
+              margin-top: 8px;
+            }
+
+            &.more {
+              color: rgba(#29F2FF, .92);
+              margin-top: 8px;
+            }
+          }
+        }
+      }
+    }
+
+    .button-wrap {
+      width: 100%;
+      text-align: center;
+      margin-top: 48px;
+    }
+  }
+}

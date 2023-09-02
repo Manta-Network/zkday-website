@@ -6,7 +6,6 @@
   height: 100vh;
   min-height: 540px;
   max-height: 1500px;
-  background: linear-gradient(264.85deg, #405DE6 -2.53%, #000000 102.54%), linear-gradient(264.85deg, #405DE6 -2.53%, #000000 102.54%);
 
   @media (max-width: $screen-lg) {
     padding: 70px 0 0;
@@ -37,7 +36,7 @@
       object-fit: cover;
 
       @media (max-width: $screen-lg) {
-        object-position: right;
+        object-position: center;
       };
     }
   }
@@ -153,6 +152,17 @@
         @media (max-width: $screen-lg) {
           display: none;
         };
+      }
+    }
+
+    .banner-wrap {
+      margin-bottom: 32px;
+
+      img {
+
+        @media (max-width: $screen-lg) {
+          max-width: 300px;
+        }
       }
     }
 

@@ -73,7 +73,7 @@
       display: flex;
       flex-direction: column;
       padding: 36px;
-      background-color: $white-color;
+      background-color: #252529;
 
       @media (max-width: $screen-lg) {
         padding: 24px;
@@ -105,7 +105,7 @@
         position: relative;
         z-index: 2;
         max-width: max-content;
-        margin-top: auto;
+        margin: 0 auto;
       }
     }
   }
