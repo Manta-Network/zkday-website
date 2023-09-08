@@ -909,6 +909,8 @@ header {
       @media (max-width: 991.98px) {
         .about-section .headline-wrap h3 {
           font-size: 32px; } }
+  .about-section .img-wrap img {
+    max-width: 100%; }
   .about-section .video-wrap iframe {
     width: 100%;
     aspect-ratio: 16 / 9; }
@@ -1075,7 +1077,8 @@ header {
           padding: 20px 0;
           border-bottom: 2px solid #A6D9FF; }
           .agenda-section .card-wrap .column-wrap ul li p {
-            font: 300 20px/1.2 "Figtree", sans-serif; }
+            font: 300 20px/1.2 "Figtree", sans-serif;
+            text-transform: uppercase; }
             .agenda-section .card-wrap .column-wrap ul li p.time {
               color: #00FFD1; }
             .agenda-section .card-wrap .column-wrap ul li p.text {
@@ -1328,6 +1331,8 @@ footer {
       @media (max-width: 991.98px) {
         .hero-previous-section .text-wrap p {
           font-size: 16px; } }
+  .hero-previous-section .img-wrap img {
+    max-width: 100%; }
   @media (max-width: 991.98px) {
     .hero-previous-section .video-wrap {
       text-align: center;

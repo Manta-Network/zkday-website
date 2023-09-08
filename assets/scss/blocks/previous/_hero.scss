@@ -132,6 +132,13 @@
     }
   }
 
+  .img-wrap {
+
+    img {
+      max-width: 100%;
+    }
+  }
+
   .video-wrap {
 
     @media (max-width: $screen-lg) {
